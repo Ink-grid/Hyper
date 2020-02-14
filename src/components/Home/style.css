@@ -1,0 +1,101 @@
+
+.parallax-slider {
+    position: relative;
+  }
+  
+  .slider-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  .slide {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    transition: 0.9s ease-in-out transform;
+    backface-visibility: hidden;
+  }
+  
+  .slide-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .slide-indicator ol {
+    display: inline-block;
+  }
+  .slide-indicator li {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .slide-indicator li:hover {
+    background: #000;
+  }
+  
+  .slide-indicator li.active {
+    background: #000;
+  }
+  
+  .slide::before {
+    content: ''; display: inline-block;
+    height: 50%;
+  }
+  
+  .content {
+    display: inline-block;
+    width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    white-space: normal;
+    color: #000;
+    transform: translate(-5px);
+  }
+  
+  .caption {
+    padding: 20px;
+    transition: 0.4s;
+    transition-delay: 0.8s;
+    opacity: 0;
+    transform: translatey(200%);
+  }
+  .caption h1 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  
+  .slide-active .caption {
+    transform: translatey(0);
+    opacity: 1;
+  }
+  
+  
+  
+  .slide1 {
+    background: url("https://www.mckinsey.com//pe/~/media/McKinsey/Locations/South%20America/Peru/Overview/Peru_Hero_GettyImages-665404151_1080.ashx") top center;
+  
+  }
+  
+  .slide2 {
+    background: url("https://www.mckinsey.com//pe/~/media/McKinsey/Locations/South%20America/Peru/Overview/Peru_Hero_GettyImages-665404151_1080.ashx") top center;
+  }
+  
+  .slide3 {
+    background: url("https://www.mckinsey.com//pe/~/media/McKinsey/Locations/South%20America/Peru/Overview/Peru_Hero_GettyImages-665404151_1080.ashx") top center;
+  }
